@@ -1,5 +1,12 @@
 body {
     background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 75px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -14,4 +21,3 @@ body {
 .hover {
     background-color: black;
 }
-
