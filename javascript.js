@@ -30,9 +30,9 @@ function addMouseover() {
 }
 
 function clearGrid() {
-    const grids = document.querySelectorAll('.hover');
+    const grids = document.querySelectorAll('.grid');
     grids.forEach(grid => {
-        grid.classList.remove("hover");
+        grid.remove();
     });
 }
 
