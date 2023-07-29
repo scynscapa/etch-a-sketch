@@ -1,6 +1,5 @@
 const container = document.querySelector('#container');
 
-// create the grid
 function createGrid(sideSize) {
     if (sideSize > 100) {
         sideSize = 100;
@@ -21,7 +20,6 @@ function createGrid(sideSize) {
     }
 }
 
-// the mouseover
 function addMouseover() {
     const grids = document.querySelectorAll('.grid');
     grids.forEach(grid => {
@@ -31,13 +29,17 @@ function addMouseover() {
     });
 }
 
-// the new grid button
+function clearGrid() {
+    const grids = document.querySelectorAll('.hover');
+    grids.forEach(grid => {
+        grid.classList.remove("hover");
+    });
+}
+
 const newGrid = document.querySelector('#newgrid');
 newGrid.addEventListener('click', function() {
     let newSize = prompt("Enter new grid size (1-100): ");
+    clearGrid();
     createGrid(newSize);
     addMouseover();
-
-
-
 });
