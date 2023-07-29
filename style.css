@@ -3,19 +3,15 @@ body {
 }
 
 .container {
-    width: 960px;
-    height: 960px;
     display: flex;
-    align-items: center;
-    gap: 1px;
-    padding: 1px;
 }
 
 .grid {
-    width: 45px;
-    height: 45px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .hover {
     background-color: black;
 }
+
